@@ -1,0 +1,151 @@
+/*----------------------------------------
+ Hero section style
+----------------------------------------*/
+.about__hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  padding-top: 160px;
+  padding-bottom: 120px;
+}
+.about__hero__left {
+  grid-column: 1 / span 5;
+}
+.about__hero__right {
+  grid-column: 6 / span 7;
+}
+.about__hero__content {
+  margin-bottom: 40px;
+}
+
+/*----------------------------------------
+   About image large style
+  ----------------------------------------*/
+.about__image-large {
+  margin-bottom: 120px;
+}
+.about__image-large img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/*----------------------------------------
+   Capabilities style
+  ----------------------------------------*/
+.capabilities-section {
+  padding-bottom: 80px;
+}
+.capabilities__description {
+  margin-bottom: 32px;
+}
+
+.capabilities__list {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.capabilities__item {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 20px 36px;
+  border: 2px solid var(--neutral-gray);
+  border-radius: 100px;
+}
+
+/*----------------------------------------
+   Experience style
+  ----------------------------------------*/
+.experience-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.experience__list {
+  display: grid;
+  gap: 80px;
+}
+
+.experience__header {
+  margin-bottom: 16px;
+}
+.experience__header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.experience__header__bot {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  /*----------------------------------------
+    Hero section style
+    ----------------------------------------*/
+  .about__hero {
+    grid-template-columns: auto;
+    gap: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__hero__left,
+  .about__hero__right {
+    grid-column: 1;
+  }
+  /*----------------------------------------
+    About image large style
+    ----------------------------------------*/
+  .about__image-large {
+    margin-bottom: 80px;
+  }
+  .about__image-large img {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+  }
+
+  /*----------------------------------------
+    Capabilities style
+    ----------------------------------------*/
+  .capabilities-section {
+    padding-bottom: 64px;
+  }
+  .capabilities__description {
+    margin-bottom: 24px;
+  }
+
+  .capabilities__list {
+    gap: 12px;
+  }
+  .capabilities__item {
+    font-size: 14px;
+    padding: 16px 24px;
+  }
+
+  /*----------------------------------------
+    Experience style
+    ----------------------------------------*/
+  .experience-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 32px;
+  }
+  .experience__list {
+    display: grid;
+    gap: 40px;
+  }
+
+  .experience__header {
+    margin-bottom: 12px;
+  }
+
+  .experience__header__top {
+    display: grid;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+}
